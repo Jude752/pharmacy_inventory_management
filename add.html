@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>add drugs</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Inventory Management System</h1>
+        <h2>Add section</h2>
+    </header>
+
+    <form action="add_drug.php" method="POST">
+        <label for="id">ID:</label>
+        <input type="number" name="id" required><br>
+
+        <label for="name">Drug Name:</label>
+        <input type="text" name="drug_name" required><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity" required><br>
+
+        <label for="re_order_level">Re-Order Level:</label>
+        <input type="number" name="re_order_level" required><br>
+
+        <label for="expiry_date">Expiry Date:</label>
+        <input type="date" name="expire_date" required><br>
+
+        <input type="submit" value="Add Drug">
+    </form>
+</body>
+</html>
